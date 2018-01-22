@@ -384,7 +384,7 @@ export default {
       this.imageObject = null
       this.$refs.previewCanvas.style.backgroundColor = 'rgba(200,200,200,.25)'
       this.$refs.previewCanvas.width = this.previewWidth * this.pixelRatio
-      this.$emit('remove')
+      this.$emit('remove', this);
     },
     rotateImage () {
       this.rotateCanvas()
